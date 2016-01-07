@@ -1,0 +1,12 @@
+[submodule "graywulf"]
+	path = graywulf
+	url = git@github.com:sciserver/graywulf.git
+[submodule "spherical"]
+	path = spherical
+	url = git@github.com:sciserver/spherical.git
+[submodule "graywulf-plugins"]
+	path = graywulf-plugins
+	url = git@github.com:sciserver/graywulf-plugins.git
+[submodule "footprint-config"]
+	path = footprint-config
+	url = git@github.com:sciserver/footprint-config.git
