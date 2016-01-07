@@ -10,3 +10,6 @@
 [submodule "footprint-config"]
 	path = footprint-config
 	url = git@github.com:sciserver/footprint-config.git
+[submodule "footprint"]
+	path = footprint
+	url = git@github.com:sciserver/footprint.git
