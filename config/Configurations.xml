@@ -145,7 +145,16 @@
       <merge file="test.config" />
       <merge file="remoteService.config" />
     </project>
-    <!-- FOOTPRINT -->
-    
+    <!-- Footprint -->
+    <project name="Jhu.Footprint.Web.UI" path="footprint\Web\Jhu.Footprint.Web.UI" type="web">
+      <merge file="..\..\graywulf\config\sections.config" />
+      <merge file="..\..\graywulf-plugins\config\sections.config" />
+      <merge file="connectionStrings.config" />
+      <merge file="mailSettings.config" />
+      <merge file="registry.config" />
+      <merge file="domain.config" />
+      <merge file="federation.config" />
+      <merge file="web.config" />
+    </project>
   </projects>
 </config>
