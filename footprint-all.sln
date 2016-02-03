@@ -234,6 +234,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Footprint.Web.Lib.Test"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Footprint.Web.UI", "footprint\web\Jhu.Footprint.Web.UI\Jhu.Footprint.Web.UI.csproj", "{41B84D73-EEE3-42C2-A317-67C21210AB5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Footprint.Web.Api.Test", "footprint\test\Jhu.Footprint.Web.Api.Test\Jhu.Footprint.Web.Api.Test.csproj", "{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -658,6 +660,12 @@ Global
 		{41B84D73-EEE3-42C2-A317-67C21210AB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41B84D73-EEE3-42C2-A317-67C21210AB5C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{41B84D73-EEE3-42C2-A317-67C21210AB5C}.Release|x86.ActiveCfg = Release|Any CPU
+		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -746,6 +754,7 @@ Global
 		{24570021-F4C8-4015-A0AF-82D4BBBEC40D} = {9D2EEB54-3E74-4863-A6C3-4B96F48A06C4}
 		{75F61EA3-FB34-4FB1-8016-8D7D7F95B969} = {EC55F00F-1BA6-4A92-BD03-46626EFC90CA}
 		{41B84D73-EEE3-42C2-A317-67C21210AB5C} = {A3BCAC3B-A0BF-42E2-9696-546439AF9921}
+		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1} = {EC55F00F-1BA6-4A92-BD03-46626EFC90CA}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = skyquery-all.vsmdi
