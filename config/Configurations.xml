@@ -159,5 +159,8 @@
     <project name="Jhu.Footprint.Web.Lib.Test" path="footprint\Test\Jhu.Footprint.Web.Lib.Test" type="console">
       <merge file="connectionStrings.config" />
     </project>
+    <project name="Jhu.Footprint.Web.Api.Test" path="footprint\Test\Jhu.Footprint.Web.Api.Test" type="console">
+      <merge file="connectionStrings.config" />
+    </project>
   </projects>
 </config>
