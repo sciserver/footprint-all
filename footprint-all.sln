@@ -236,6 +236,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Footprint.Web.UI", "foo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Footprint.Web.Api.Test", "footprint\test\Jhu.Footprint.Web.Api.Test\Jhu.Footprint.Web.Api.Test.csproj", "{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Graywulf-Entities", "Graywulf-Entities", "{9561FE81-893A-45AB-8D7F-49EDDA3CBAA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dll", "Dll", "{8265FF41-041A-4A48-A4D8-D4C0EF17B0D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities", "graywulf-entities\dll\Jhu.Graywulf.Entities\Jhu.Graywulf.Entities.csproj", "{CF0CEC0A-139F-40F5-A6DD-2708400B539D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities.Test", "graywulf-entities\test\Jhu.Graywulf.Entities.Test\Jhu.Graywulf.Entities.Test.csproj", "{D665C558-0E22-49C4-8ADC-F9526E895C3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B2998748-CA15-4951-BF1D-7F0D493C0E38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -666,6 +676,18 @@ Global
 		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}.Release|x86.ActiveCfg = Release|Any CPU
+		{CF0CEC0A-139F-40F5-A6DD-2708400B539D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF0CEC0A-139F-40F5-A6DD-2708400B539D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF0CEC0A-139F-40F5-A6DD-2708400B539D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CF0CEC0A-139F-40F5-A6DD-2708400B539D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF0CEC0A-139F-40F5-A6DD-2708400B539D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF0CEC0A-139F-40F5-A6DD-2708400B539D}.Release|x86.ActiveCfg = Release|Any CPU
+		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -755,6 +777,10 @@ Global
 		{75F61EA3-FB34-4FB1-8016-8D7D7F95B969} = {EC55F00F-1BA6-4A92-BD03-46626EFC90CA}
 		{41B84D73-EEE3-42C2-A317-67C21210AB5C} = {A3BCAC3B-A0BF-42E2-9696-546439AF9921}
 		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1} = {EC55F00F-1BA6-4A92-BD03-46626EFC90CA}
+		{8265FF41-041A-4A48-A4D8-D4C0EF17B0D8} = {9561FE81-893A-45AB-8D7F-49EDDA3CBAA1}
+		{CF0CEC0A-139F-40F5-A6DD-2708400B539D} = {8265FF41-041A-4A48-A4D8-D4C0EF17B0D8}
+		{D665C558-0E22-49C4-8ADC-F9526E895C3C} = {B2998748-CA15-4951-BF1D-7F0D493C0E38}
+		{B2998748-CA15-4951-BF1D-7F0D493C0E38} = {9561FE81-893A-45AB-8D7F-49EDDA3CBAA1}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = skyquery-all.vsmdi
