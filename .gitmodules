@@ -13,3 +13,6 @@
 [submodule "footprint"]
 	path = footprint
 	url = git@github.com:sciserver/footprint.git
+[submodule "graywulf-entities"]
+	path = graywulf-entities
+	url = git@github.com:sciserver/graywulf-entities.git
