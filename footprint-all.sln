@@ -241,10 +241,31 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dll", "Dll", "{8265FF41-041A-4A48-A4D8-D4C0EF17B0D8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities", "graywulf-entities\dll\Jhu.Graywulf.Entities\Jhu.Graywulf.Entities.csproj", "{CF0CEC0A-139F-40F5-A6DD-2708400B539D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DFC2C453-4CE2-403E-8C91-CB28588E4B81} = {DFC2C453-4CE2-403E-8C91-CB28588E4B81}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities.Test", "graywulf-entities\test\Jhu.Graywulf.Entities.Test\Jhu.Graywulf.Entities.Test.csproj", "{D665C558-0E22-49C4-8ADC-F9526E895C3C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B2998748-CA15-4951-BF1D-7F0D493C0E38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{BC7553DE-3C4C-4220-817E-0BAD27A835FD}"
+	ProjectSection(SolutionItems) = preProject
+		footprint\sql\Jhu.Footprint.Logic.sql = footprint\sql\Jhu.Footprint.Logic.sql
+		footprint\sql\Jhu.Footprint.Tables.sql = footprint\sql\Jhu.Footprint.Tables.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities.Build", "graywulf-entities\build\Jhu.Graywulf.Entities.Build\Jhu.Graywulf.Entities.Build.csproj", "{DFC2C453-4CE2-403E-8C91-CB28588E4B81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{BC9BCD09-39FE-4751-88BE-6A6261AC868C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{49E648EF-5D17-4E3F-8F62-1E2DAEC9207C}"
+	ProjectSection(SolutionItems) = preProject
+		graywulf-entities\sql\Graywulf.Entities.Sql.Create.sql = graywulf-entities\sql\Graywulf.Entities.Sql.Create.sql
+		graywulf-entities\sql\Graywulf.Entities.Sql.Drop.sql = graywulf-entities\sql\Graywulf.Entities.Sql.Drop.sql
+		graywulf-entities\sql\Graywulf.Entities.Sql.Test.sql = graywulf-entities\sql\Graywulf.Entities.Sql.Test.sql
+		graywulf-entities\sql\Graywulf.Entities.Test.sql = graywulf-entities\sql\Graywulf.Entities.Test.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -556,7 +577,6 @@ Global
 		{8C128E59-14E3-4E84-824E-AF5FB58C5D58}.Release|x86.ActiveCfg = Release|Any CPU
 		{53F384AE-B0F1-4E52-A067-6F1EE4C46588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{53F384AE-B0F1-4E52-A067-6F1EE4C46588}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{53F384AE-B0F1-4E52-A067-6F1EE4C46588}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{53F384AE-B0F1-4E52-A067-6F1EE4C46588}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{53F384AE-B0F1-4E52-A067-6F1EE4C46588}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53F384AE-B0F1-4E52-A067-6F1EE4C46588}.Release|Any CPU.Build.0 = Release|Any CPU
@@ -688,6 +708,12 @@ Global
 		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Release|x86.ActiveCfg = Release|Any CPU
+		{DFC2C453-4CE2-403E-8C91-CB28588E4B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC2C453-4CE2-403E-8C91-CB28588E4B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC2C453-4CE2-403E-8C91-CB28588E4B81}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DFC2C453-4CE2-403E-8C91-CB28588E4B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC2C453-4CE2-403E-8C91-CB28588E4B81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC2C453-4CE2-403E-8C91-CB28588E4B81}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -781,6 +807,10 @@ Global
 		{CF0CEC0A-139F-40F5-A6DD-2708400B539D} = {8265FF41-041A-4A48-A4D8-D4C0EF17B0D8}
 		{D665C558-0E22-49C4-8ADC-F9526E895C3C} = {B2998748-CA15-4951-BF1D-7F0D493C0E38}
 		{B2998748-CA15-4951-BF1D-7F0D493C0E38} = {9561FE81-893A-45AB-8D7F-49EDDA3CBAA1}
+		{BC7553DE-3C4C-4220-817E-0BAD27A835FD} = {8A792485-B305-46BE-89A7-9F3D40D78590}
+		{DFC2C453-4CE2-403E-8C91-CB28588E4B81} = {BC9BCD09-39FE-4751-88BE-6A6261AC868C}
+		{BC9BCD09-39FE-4751-88BE-6A6261AC868C} = {9561FE81-893A-45AB-8D7F-49EDDA3CBAA1}
+		{49E648EF-5D17-4E3F-8F62-1E2DAEC9207C} = {9561FE81-893A-45AB-8D7F-49EDDA3CBAA1}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = skyquery-all.vsmdi
