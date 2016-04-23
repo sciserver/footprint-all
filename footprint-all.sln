@@ -267,6 +267,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{49E648EF-5D1
 		graywulf-entities\sql\Graywulf.Entities.Test.sql = graywulf-entities\sql\Graywulf.Entities.Test.sql
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{830C16D0-2867-4B8B-B419-D3314798A908}"
+	ProjectSection(SolutionItems) = preProject
+		graywulf\sql\Jhu.Graywulf.Registry.Logic.sql = graywulf\sql\Jhu.Graywulf.Registry.Logic.sql
+		graywulf\sql\Jhu.Graywulf.Registry.Tables.sql = graywulf\sql\Jhu.Graywulf.Registry.Tables.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -811,6 +817,7 @@ Global
 		{DFC2C453-4CE2-403E-8C91-CB28588E4B81} = {BC9BCD09-39FE-4751-88BE-6A6261AC868C}
 		{BC9BCD09-39FE-4751-88BE-6A6261AC868C} = {9561FE81-893A-45AB-8D7F-49EDDA3CBAA1}
 		{49E648EF-5D17-4E3F-8F62-1E2DAEC9207C} = {9561FE81-893A-45AB-8D7F-49EDDA3CBAA1}
+		{830C16D0-2867-4B8B-B419-D3314798A908} = {2C0C403F-4604-4DA8-8A2E-C593288D5D57}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = skyquery-all.vsmdi
