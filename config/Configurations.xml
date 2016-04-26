@@ -168,6 +168,7 @@
       <merge file="domain.config" />
       <merge file="federation.config" />
       <merge file="web.config" />
+      <merge file="test.config" />
     </project>
   </projects>
 </config>
