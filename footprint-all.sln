@@ -236,19 +236,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Footprint.Web.UI", "foo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Footprint.Web.Api.Test", "footprint\test\Jhu.Footprint.Web.Api.Test\Jhu.Footprint.Web.Api.Test.csproj", "{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Graywulf-Entities", "Graywulf-Entities", "{9561FE81-893A-45AB-8D7F-49EDDA3CBAA1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dll", "Dll", "{8265FF41-041A-4A48-A4D8-D4C0EF17B0D8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities", "graywulf-entities\dll\Jhu.Graywulf.Entities\Jhu.Graywulf.Entities.csproj", "{CF0CEC0A-139F-40F5-A6DD-2708400B539D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{DFC2C453-4CE2-403E-8C91-CB28588E4B81} = {DFC2C453-4CE2-403E-8C91-CB28588E4B81}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities.Test", "graywulf-entities\test\Jhu.Graywulf.Entities.Test\Jhu.Graywulf.Entities.Test.csproj", "{D665C558-0E22-49C4-8ADC-F9526E895C3C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B2998748-CA15-4951-BF1D-7F0D493C0E38}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{BC7553DE-3C4C-4220-817E-0BAD27A835FD}"
 	ProjectSection(SolutionItems) = preProject
 		footprint\sql\Jhu.Footprint.Logic.Create.sql = footprint\sql\Jhu.Footprint.Logic.Create.sql
@@ -257,30 +244,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{BC7553DE-3C4
 		footprint\sql\Jhu.Footprint.Tables.Drop.sql = footprint\sql\Jhu.Footprint.Tables.Drop.sql
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities.Build", "graywulf-entities\build\Jhu.Graywulf.Entities.Build\Jhu.Graywulf.Entities.Build.csproj", "{DFC2C453-4CE2-403E-8C91-CB28588E4B81}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{BC9BCD09-39FE-4751-88BE-6A6261AC868C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{49E648EF-5D17-4E3F-8F62-1E2DAEC9207C}"
-	ProjectSection(SolutionItems) = preProject
-		graywulf-entities\sql\Graywulf.Entities.Sql.Create.sql = graywulf-entities\sql\Graywulf.Entities.Sql.Create.sql
-		graywulf-entities\sql\Graywulf.Entities.Sql.Drop.sql = graywulf-entities\sql\Graywulf.Entities.Sql.Drop.sql
-		graywulf-entities\sql\Graywulf.Entities.Sql.Test.sql = graywulf-entities\sql\Graywulf.Entities.Sql.Test.sql
-		graywulf-entities\sql\Graywulf.Entities.Test.sql = graywulf-entities\sql\Graywulf.Entities.Test.sql
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{830C16D0-2867-4B8B-B419-D3314798A908}"
 	ProjectSection(SolutionItems) = preProject
+		graywulf\sql\Jhu.Graywulf.Entities.Sql.Create.sql = graywulf\sql\Jhu.Graywulf.Entities.Sql.Create.sql
+		graywulf\sql\Jhu.Graywulf.Entities.Sql.Drop.sql = graywulf\sql\Jhu.Graywulf.Entities.Sql.Drop.sql
+		graywulf\sql\Jhu.Graywulf.Entities.Sql.Test.sql = graywulf\sql\Jhu.Graywulf.Entities.Sql.Test.sql
+		graywulf\sql\Jhu.Graywulf.Entities.Test.sql = graywulf\sql\Jhu.Graywulf.Entities.Test.sql
 		graywulf\sql\Jhu.Graywulf.Registry.Logic.sql = graywulf\sql\Jhu.Graywulf.Registry.Logic.sql
 		graywulf\sql\Jhu.Graywulf.Registry.Tables.sql = graywulf\sql\Jhu.Graywulf.Registry.Tables.sql
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.AccessControl", "graywulf-entities\dll\Jhu.Graywulf.AccessControl\Jhu.Graywulf.AccessControl.csproj", "{73396997-E14A-44BF-B5D4-2E442424F766}"
-	ProjectSection(ProjectDependencies) = postProject
-		{DFC2C453-4CE2-403E-8C91-CB28588E4B81} = {DFC2C453-4CE2-403E-8C91-CB28588E4B81}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities.Build", "graywulf\build\Jhu.Graywulf.Entities.Build\Jhu.Graywulf.Entities.Build.csproj", "{B25AD38F-0515-481F-A7CB-2A252B9257FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.AccessControl.Test", "graywulf-entities\test\Jhu.Graywulf.AccessControl.Test\Jhu.Graywulf.AccessControl.Test.csproj", "{705995AF-35D2-4EFE-B0B5-852F30D2B40D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.AccessControl", "graywulf\dll\Jhu.Graywulf.AccessControl\Jhu.Graywulf.AccessControl.csproj", "{DA689D40-EDCD-433D-8D9B-4E96829F8C6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities", "graywulf\dll\Jhu.Graywulf.Entities\Jhu.Graywulf.Entities.csproj", "{10B184E6-825D-4498-98D5-A42939E4BD2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.AccessControl.Test", "graywulf\test\Jhu.Graywulf.AccessControl.Test\Jhu.Graywulf.AccessControl.Test.csproj", "{96B78C89-3E68-450B-B08B-48A7E8073759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities.Test", "graywulf\test\Jhu.Graywulf.Entities.Test\Jhu.Graywulf.Entities.Test.csproj", "{160F090C-EAD7-4C6D-AA3C-54FDA7082088}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -711,36 +693,36 @@ Global
 		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1}.Release|x86.ActiveCfg = Release|Any CPU
-		{CF0CEC0A-139F-40F5-A6DD-2708400B539D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF0CEC0A-139F-40F5-A6DD-2708400B539D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF0CEC0A-139F-40F5-A6DD-2708400B539D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{CF0CEC0A-139F-40F5-A6DD-2708400B539D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF0CEC0A-139F-40F5-A6DD-2708400B539D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF0CEC0A-139F-40F5-A6DD-2708400B539D}.Release|x86.ActiveCfg = Release|Any CPU
-		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D665C558-0E22-49C4-8ADC-F9526E895C3C}.Release|x86.ActiveCfg = Release|Any CPU
-		{DFC2C453-4CE2-403E-8C91-CB28588E4B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DFC2C453-4CE2-403E-8C91-CB28588E4B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DFC2C453-4CE2-403E-8C91-CB28588E4B81}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{DFC2C453-4CE2-403E-8C91-CB28588E4B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DFC2C453-4CE2-403E-8C91-CB28588E4B81}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DFC2C453-4CE2-403E-8C91-CB28588E4B81}.Release|x86.ActiveCfg = Release|Any CPU
-		{73396997-E14A-44BF-B5D4-2E442424F766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73396997-E14A-44BF-B5D4-2E442424F766}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73396997-E14A-44BF-B5D4-2E442424F766}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{73396997-E14A-44BF-B5D4-2E442424F766}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73396997-E14A-44BF-B5D4-2E442424F766}.Release|Any CPU.Build.0 = Release|Any CPU
-		{73396997-E14A-44BF-B5D4-2E442424F766}.Release|x86.ActiveCfg = Release|Any CPU
-		{705995AF-35D2-4EFE-B0B5-852F30D2B40D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{705995AF-35D2-4EFE-B0B5-852F30D2B40D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{705995AF-35D2-4EFE-B0B5-852F30D2B40D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{705995AF-35D2-4EFE-B0B5-852F30D2B40D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{705995AF-35D2-4EFE-B0B5-852F30D2B40D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{705995AF-35D2-4EFE-B0B5-852F30D2B40D}.Release|x86.ActiveCfg = Release|Any CPU
+		{B25AD38F-0515-481F-A7CB-2A252B9257FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25AD38F-0515-481F-A7CB-2A252B9257FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25AD38F-0515-481F-A7CB-2A252B9257FA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B25AD38F-0515-481F-A7CB-2A252B9257FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25AD38F-0515-481F-A7CB-2A252B9257FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25AD38F-0515-481F-A7CB-2A252B9257FA}.Release|x86.ActiveCfg = Release|Any CPU
+		{DA689D40-EDCD-433D-8D9B-4E96829F8C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA689D40-EDCD-433D-8D9B-4E96829F8C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA689D40-EDCD-433D-8D9B-4E96829F8C6A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DA689D40-EDCD-433D-8D9B-4E96829F8C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA689D40-EDCD-433D-8D9B-4E96829F8C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA689D40-EDCD-433D-8D9B-4E96829F8C6A}.Release|x86.ActiveCfg = Release|Any CPU
+		{10B184E6-825D-4498-98D5-A42939E4BD2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10B184E6-825D-4498-98D5-A42939E4BD2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10B184E6-825D-4498-98D5-A42939E4BD2D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{10B184E6-825D-4498-98D5-A42939E4BD2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10B184E6-825D-4498-98D5-A42939E4BD2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10B184E6-825D-4498-98D5-A42939E4BD2D}.Release|x86.ActiveCfg = Release|Any CPU
+		{96B78C89-3E68-450B-B08B-48A7E8073759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96B78C89-3E68-450B-B08B-48A7E8073759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96B78C89-3E68-450B-B08B-48A7E8073759}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{96B78C89-3E68-450B-B08B-48A7E8073759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96B78C89-3E68-450B-B08B-48A7E8073759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96B78C89-3E68-450B-B08B-48A7E8073759}.Release|x86.ActiveCfg = Release|Any CPU
+		{160F090C-EAD7-4C6D-AA3C-54FDA7082088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{160F090C-EAD7-4C6D-AA3C-54FDA7082088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{160F090C-EAD7-4C6D-AA3C-54FDA7082088}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{160F090C-EAD7-4C6D-AA3C-54FDA7082088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{160F090C-EAD7-4C6D-AA3C-54FDA7082088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{160F090C-EAD7-4C6D-AA3C-54FDA7082088}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -830,17 +812,13 @@ Global
 		{75F61EA3-FB34-4FB1-8016-8D7D7F95B969} = {EC55F00F-1BA6-4A92-BD03-46626EFC90CA}
 		{41B84D73-EEE3-42C2-A317-67C21210AB5C} = {A3BCAC3B-A0BF-42E2-9696-546439AF9921}
 		{02E5D24F-4A27-4C44-AAC6-E42ADFC573A1} = {EC55F00F-1BA6-4A92-BD03-46626EFC90CA}
-		{8265FF41-041A-4A48-A4D8-D4C0EF17B0D8} = {9561FE81-893A-45AB-8D7F-49EDDA3CBAA1}
-		{CF0CEC0A-139F-40F5-A6DD-2708400B539D} = {8265FF41-041A-4A48-A4D8-D4C0EF17B0D8}
-		{D665C558-0E22-49C4-8ADC-F9526E895C3C} = {B2998748-CA15-4951-BF1D-7F0D493C0E38}
-		{B2998748-CA15-4951-BF1D-7F0D493C0E38} = {9561FE81-893A-45AB-8D7F-49EDDA3CBAA1}
 		{BC7553DE-3C4C-4220-817E-0BAD27A835FD} = {8A792485-B305-46BE-89A7-9F3D40D78590}
-		{DFC2C453-4CE2-403E-8C91-CB28588E4B81} = {BC9BCD09-39FE-4751-88BE-6A6261AC868C}
-		{BC9BCD09-39FE-4751-88BE-6A6261AC868C} = {9561FE81-893A-45AB-8D7F-49EDDA3CBAA1}
-		{49E648EF-5D17-4E3F-8F62-1E2DAEC9207C} = {9561FE81-893A-45AB-8D7F-49EDDA3CBAA1}
 		{830C16D0-2867-4B8B-B419-D3314798A908} = {2C0C403F-4604-4DA8-8A2E-C593288D5D57}
-		{73396997-E14A-44BF-B5D4-2E442424F766} = {8265FF41-041A-4A48-A4D8-D4C0EF17B0D8}
-		{705995AF-35D2-4EFE-B0B5-852F30D2B40D} = {B2998748-CA15-4951-BF1D-7F0D493C0E38}
+		{B25AD38F-0515-481F-A7CB-2A252B9257FA} = {8FA54973-7055-4E53-9BE2-9326DB062BEE}
+		{DA689D40-EDCD-433D-8D9B-4E96829F8C6A} = {2939F058-FEE3-4142-BF45-8672DCFD4C11}
+		{10B184E6-825D-4498-98D5-A42939E4BD2D} = {2939F058-FEE3-4142-BF45-8672DCFD4C11}
+		{96B78C89-3E68-450B-B08B-48A7E8073759} = {31A32854-8930-499D-9DC1-969C3B2CCE36}
+		{160F090C-EAD7-4C6D-AA3C-54FDA7082088} = {31A32854-8930-499D-9DC1-969C3B2CCE36}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = skyquery-all.vsmdi
