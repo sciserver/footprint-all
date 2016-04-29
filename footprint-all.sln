@@ -246,10 +246,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{BC7553DE-3C4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{830C16D0-2867-4B8B-B419-D3314798A908}"
 	ProjectSection(SolutionItems) = preProject
-		graywulf\sql\Jhu.Graywulf.Entities.Sql.Create.sql = graywulf\sql\Jhu.Graywulf.Entities.Sql.Create.sql
-		graywulf\sql\Jhu.Graywulf.Entities.Sql.Drop.sql = graywulf\sql\Jhu.Graywulf.Entities.Sql.Drop.sql
-		graywulf\sql\Jhu.Graywulf.Entities.Sql.Test.sql = graywulf\sql\Jhu.Graywulf.Entities.Sql.Test.sql
-		graywulf\sql\Jhu.Graywulf.Entities.Test.sql = graywulf\sql\Jhu.Graywulf.Entities.Test.sql
 		graywulf\sql\Jhu.Graywulf.Registry.Logic.sql = graywulf\sql\Jhu.Graywulf.Registry.Logic.sql
 		graywulf\sql\Jhu.Graywulf.Registry.Tables.sql = graywulf\sql\Jhu.Graywulf.Registry.Tables.sql
 	EndProjectSection
@@ -263,6 +259,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.AccessControl.Test", "graywulf\test\Jhu.Graywulf.AccessControl.Test\Jhu.Graywulf.AccessControl.Test.csproj", "{96B78C89-3E68-450B-B08B-48A7E8073759}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities.Test", "graywulf\test\Jhu.Graywulf.Entities.Test\Jhu.Graywulf.Entities.Test.csproj", "{160F090C-EAD7-4C6D-AA3C-54FDA7082088}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{1DE37711-464D-4EF4-8F70-F82FB405DD5E}"
+	ProjectSection(SolutionItems) = preProject
+		graywulf\sql\Jhu.Graywulf.Entities\Jhu.Graywulf.Entities.Sql.Create.sql = graywulf\sql\Jhu.Graywulf.Entities\Jhu.Graywulf.Entities.Sql.Create.sql
+		graywulf\sql\Jhu.Graywulf.Entities\Jhu.Graywulf.Entities.Sql.Drop.sql = graywulf\sql\Jhu.Graywulf.Entities\Jhu.Graywulf.Entities.Sql.Drop.sql
+		graywulf\sql\Jhu.Graywulf.Entities\Jhu.Graywulf.Entities.Sql.Test.sql = graywulf\sql\Jhu.Graywulf.Entities\Jhu.Graywulf.Entities.Sql.Test.sql
+		graywulf\sql\Jhu.Graywulf.Entities\Jhu.Graywulf.Entities.Test.sql = graywulf\sql\Jhu.Graywulf.Entities\Jhu.Graywulf.Entities.Test.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -819,6 +823,7 @@ Global
 		{10B184E6-825D-4498-98D5-A42939E4BD2D} = {2939F058-FEE3-4142-BF45-8672DCFD4C11}
 		{96B78C89-3E68-450B-B08B-48A7E8073759} = {31A32854-8930-499D-9DC1-969C3B2CCE36}
 		{160F090C-EAD7-4C6D-AA3C-54FDA7082088} = {31A32854-8930-499D-9DC1-969C3B2CCE36}
+		{1DE37711-464D-4EF4-8F70-F82FB405DD5E} = {830C16D0-2867-4B8B-B419-D3314798A908}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = skyquery-all.vsmdi
