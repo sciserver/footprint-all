@@ -251,8 +251,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B2998748-C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{BC7553DE-3C4C-4220-817E-0BAD27A835FD}"
 	ProjectSection(SolutionItems) = preProject
-		footprint\sql\Jhu.Footprint.Logic.sql = footprint\sql\Jhu.Footprint.Logic.sql
-		footprint\sql\Jhu.Footprint.Tables.sql = footprint\sql\Jhu.Footprint.Tables.sql
+		footprint\sql\Jhu.Footprint.Logic.Create.sql = footprint\sql\Jhu.Footprint.Logic.Create.sql
+		footprint\sql\Jhu.Footprint.Logic.Drop.sql = footprint\sql\Jhu.Footprint.Logic.Drop.sql
+		footprint\sql\Jhu.Footprint.Tables.Create.sql = footprint\sql\Jhu.Footprint.Tables.Create.sql
+		footprint\sql\Jhu.Footprint.Tables.Drop.sql = footprint\sql\Jhu.Footprint.Tables.Drop.sql
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities.Build", "graywulf-entities\build\Jhu.Graywulf.Entities.Build\Jhu.Graywulf.Entities.Build.csproj", "{DFC2C453-4CE2-403E-8C91-CB28588E4B81}"
