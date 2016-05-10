@@ -249,6 +249,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{830C16D0-286
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.Entities.Build", "graywulf\build\Jhu.Graywulf.Entities.Build\Jhu.Graywulf.Entities.Build.csproj", "{B25AD38F-0515-481F-A7CB-2A252B9257FA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA689D40-EDCD-433D-8D9B-4E96829F8C6A} = {DA689D40-EDCD-433D-8D9B-4E96829F8C6A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jhu.Graywulf.AccessControl", "graywulf\dll\Jhu.Graywulf.AccessControl\Jhu.Graywulf.AccessControl.csproj", "{DA689D40-EDCD-433D-8D9B-4E96829F8C6A}"
 EndProject
